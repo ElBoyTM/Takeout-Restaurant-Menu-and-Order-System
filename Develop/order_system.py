@@ -56,7 +56,7 @@ def place_order(menu):
                 i += 1
 
         # TODO: Ask customer to input menu item number
-        menu_selection = input("Please enter the number of the item you would like to order:")
+        menu_selection = input("Type menu number:")
 
         # TODO: Update the order list using the update_order function
         # TODO: Send the order list, menu selection, and menu items as arguments
@@ -64,7 +64,7 @@ def place_order(menu):
 
         # TODO: Ask the customer if they would like to order anything else
         # TODO: Let the customer know if they should type 'n' or 'N' to quit
-        continue_ordering = input("Would you like to order anything else? (y/n): ")
+        continue_ordering = input("Would you like to keep ordering? (N)o to quit:")
 
         # TODO: Write a conditional statement that checks the user's input
         # TODO: The conditional statement should check for 'n' or 'N'
@@ -119,7 +119,7 @@ def update_order(order, menu_selection, menu_items):
 
             # TODO: Ask the customer for the quantity of the menu item
             # TODO: Use the item name variable in the question
-            quantity = input(f"How many {item_name} would you like to order?")
+            quantity = input(f"What quantity {item_name} would you like?")
 
             # TODO: Check if the quantity is a number, default to 1 if not
             if quantity.isdigit():
